@@ -1,3 +1,4 @@
+// A generic class where T can be any type
 public class Box<T> {
     private T value;
 
@@ -9,6 +10,7 @@ public class Box<T> {
         return value;
     }
 
+    // A generic method that can accept any type of Box
     public static void printBox(Box<?> box) {
         System.out.println("Box contains: " + box.get());
     }
